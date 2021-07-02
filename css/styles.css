@@ -357,10 +357,6 @@ img {
   margin-bottom: 50px;
 }
 
-.our-team-image {
-  /* margin-bottom: 30px; */
-}
-
 .our-team-blocks {
   display: flex;
   flex-wrap: wrap;
@@ -397,7 +393,6 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: var(--title-text-color);
-  /*fill="#afb1b8" style="fill: var(--color3, #afb1b8)"*/
 }
 
 .social-link:hover,
@@ -418,6 +413,31 @@ img {
 /*============= End Our team=============*/
 
 /*============= Our clients==============*/
+.clients-list {
+  display: flex;
+  margin-top: calc(-1 * var(--margin));
+  margin-left: calc(-1 * var(--margin));
+}
+
+.clients-list-items {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-top: var(--margin);
+  margin-left: var(--margin);
+}
+
+.clients-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-links);
+  border-radius: 4px;
+}
+
+.clients-links-icons {
+  fill: var(--social-links);
+}
 
 /*============= Our clients==============*/
 
