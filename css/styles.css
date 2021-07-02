@@ -15,6 +15,7 @@
   --shadow-two: rgba(0, 0, 0, 0.14);
   --shadow-three: rgba(0, 0, 0, 0.2);
   --shadow-hero-button: rgba(0, 0, 0, 0.15);
+  --hero-bg: #c4c4c4;
   --margin: 30px;
 }
 
@@ -186,10 +187,24 @@ img {
 
 /*=============Hero=============*/
 .hero {
-  background-color: var(--background-color);
+  background-color: var(--hero-bg);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.overlay {
+  height: 600px;
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero/Img.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero .container {
