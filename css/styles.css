@@ -349,7 +349,7 @@ img {
 .our-team-specialty {
   font-weight: 400;
   letter-spacing: 0.03em;
-  margin-bottom: 0;
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
 }
 
