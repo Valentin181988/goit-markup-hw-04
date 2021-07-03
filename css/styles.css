@@ -18,6 +18,10 @@
   --hero-bg: #c4c4c4;
   --margin: 30px;
   --social-links: #afb1b8;
+  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --box-shadow-pr: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 body {
@@ -107,6 +111,9 @@ img {
 
 .mail-button {
   margin-right: 50px;
+}
+
+.header-button::before {
 }
 
 .link-logo {
@@ -386,9 +393,7 @@ img {
   background: var(--title-text-color);
   /* material shadow v1 */
 
-  box-shadow: 0px 1px 3px var(--shadow-one), 0px 1px 1px var(--shadow-two),
-    0px 2px 1px var(--shadow-three);
-  border-radius: 0px 0px 4px 4px;
+  box-shadow: var(--box-shadow);
 }
 
 .our-team-thumb {
@@ -397,7 +402,11 @@ img {
 
 .social-link-list {
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+}
+
+.social-link-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link {
@@ -502,6 +511,40 @@ img {
 .adress-link:focus {
   color: var(--accent-color);
 }
+
+.social-link-list {
+  justify-content: center;
+}
+
+.social-link {
+  background-color: ;
+}
+
+.social-link-icon.f-link-color {
+  fill: var(--title-text-color);
+}
+
+.position {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.join {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 20px;
+}
+
+.social-link-item:not(:last-child) {
+  margin-right: 10px;
+}
 /*=============End Footer=============*/
 
 /*=============End WebStudio=============*/
@@ -562,6 +605,11 @@ img {
 
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+}
+
+.projects-blocks:hover,
+.projects-blocks:focus {
+  box-shadow: var(--box-shadow-pr);
 }
 
 .projects-links,
