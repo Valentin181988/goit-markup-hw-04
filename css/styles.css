@@ -114,9 +114,6 @@ img {
   margin-right: 50px;
 }
 
-.header-button::before {
-}
-
 .link-logo {
   font-family: inherit;
   font-style: inherit;
@@ -178,9 +175,17 @@ img {
   color: var(--accent-color);
 }
 
+.menu-icons {
+  margin-right: 10px;
+}
+
 .header-button,
 .tel-link-header {
   color: var(--secondary-text-color);
+}
+
+.menu-icons {
+  fill: var(--secondary-text-color);
 }
 
 .header-button:hover,
@@ -188,10 +193,21 @@ img {
   color: var(--accent-color);
 }
 
+.header-button:hover .menu-icons,
+.header-button:focus .menu-icons {
+  fill: var(--accent-color);
+}
+
 .tel-link-header:hover,
 .tel-link-header:focus {
   color: var(--accent-color);
 }
+
+.tel-link-header:hover .menu-icons,
+.tel-link-header:focus .menu-icons {
+  fill: var(--accent-color);
+}
+
 /*=============End Header=============*/
 
 /*=============Hero=============*/
