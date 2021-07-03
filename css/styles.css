@@ -18,6 +18,7 @@
   --hero-bg: #c4c4c4;
   --margin: 30px;
   --social-links: #afb1b8;
+  --social-links-bg-f: rgba(255, 255, 255, 0.1);
   --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --box-shadow-pr: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -517,7 +518,7 @@ img {
 }
 
 .social-link {
-  background-color: ;
+  background-color: var(--social-links-bg-f);
 }
 
 .social-link-icon.f-link-color {
