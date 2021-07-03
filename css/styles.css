@@ -439,6 +439,17 @@ img {
   fill: var(--social-links);
 }
 
+.clients-links:hover,
+.clients-links:focus {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.clients-links:hover .clients-links-icons,
+.clients-links:focus .clients-links-icons {
+  fill: var(--accent-color);
+}
+
 /*============= Our clients==============*/
 
 /*=============Footer=============*/
