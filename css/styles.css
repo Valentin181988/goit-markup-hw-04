@@ -179,6 +179,16 @@ img {
   margin-right: 10px;
 }
 
+.header-button {
+  display: flex;
+  align-items: center;
+}
+
+.tel-link-header {
+  display: flex;
+  align-items: center;
+}
+
 .header-button,
 .tel-link-header {
   color: var(--secondary-text-color);
